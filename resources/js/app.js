@@ -1,5 +1,5 @@
 import "./bootstrap";
-import "../css/app.css";
+import "../scss/app.scss";
 import "@protonemedia/laravel-splade/dist/style.css";
 
 import { createApp } from "vue/dist/vue.esm-bundler.js";
