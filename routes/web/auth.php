@@ -1,9 +1,21 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ShowLoginPageController;
 use App\Http\Controllers\Auth\ShowRegisterPageController;
 use Illuminate\Support\Facades\Route;
 
-Route::get("login", ShowLoginPageController::class)->name("login");
+// show login page
+Route::get("login", ShowLoginPageController::class)->name("show.login");
+// do login operation
+Route::post("login", LoginController::class)->name("login");
 
-Route::get("register", ShowRegisterPageController::class)->name("register");
+// show registration page
+Route::get("register", ShowRegisterPageController::class)->name("show.register");
+// do register operation
+Route::post("register", RegisterController::class)->name("register");
+
+// do logout user
+Route::post("logout", LogoutController::class)->name("logout");
