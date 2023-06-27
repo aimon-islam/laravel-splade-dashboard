@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(['splade'])->group(function () {
 
     // auth routes
-    Route::as("web.auth")->group(base_path("routes/web/auth.php"));
+    Route::as("web.auth.")->group(base_path("routes/web/auth.php"));
 
     // Registers routes to support the interactive components...
     Route::spladeWithVueBridge();

@@ -11,7 +11,7 @@ class RegisterRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,11 @@ class RegisterRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            "first_name" => "required|string",
+            "last_name" => "required|string",
+            "email" => "required|email",
+            "phone" => "nullable|numeric|min:11", // the minimum digit 11 is only for bangladesh if you are living outside input your own
+            "password" => "required|confirmed|min:6", // the minimum digit 11 is only for bangladesh if you are living outside input your own
         ];
     }
 }
