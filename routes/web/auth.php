@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ShowLoginPageController;
 use App\Http\Controllers\Auth\ShowRegisterPageController;
@@ -18,4 +17,4 @@ Route::get("register", ShowRegisterPageController::class)->name("show.register")
 Route::post("register", RegisterController::class)->name("register");
 
 // do logout user
-Route::post("logout", LogoutController::class)->name("logout");
+Route::post("logout", fn () => auth()->logout())->name("logout");
