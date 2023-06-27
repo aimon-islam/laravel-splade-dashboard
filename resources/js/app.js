@@ -1,3 +1,4 @@
+import 'flowbite';
 import "./bootstrap";
 import "../scss/app.scss";
 import "@protonemedia/laravel-splade/dist/style.css";
