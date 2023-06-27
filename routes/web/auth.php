@@ -1,9 +1,9 @@
 <?php
 
+use App\Http\Controllers\Auth\ShowLoginPageController;
+use App\Http\Controllers\Auth\ShowRegisterPageController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Auth\ShowLoginPage;
-use App\Http\Controllers\Auth\ShowRegisterPage;
 
-Route::get("login", ShowLoginPage::class)->name("login");
+Route::get("login", ShowLoginPageController::class)->name("login");
 
-Route::get("register", ShowRegisterPage::class)->name("register");
+Route::get("register", ShowRegisterPageController::class)->name("register");
