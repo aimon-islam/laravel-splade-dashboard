@@ -19,5 +19,5 @@ Route::post("register", RegisterController::class)->name("register");
 // do logout user
 Route::delete("logout", function () {
     auth()->logout();
-    return redirect()->route("home");
+    return redirect("/");
 })->name("logout");

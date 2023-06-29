@@ -13,12 +13,12 @@
                             </div>
                         </x-splade-form>
                     </li>
-                    
-                    <x-sidebar-item label="Dashboard" :active="request()->routeIs('dashboard')" to="/dashboard">
+
+                    <x-dashboard-sidebar-item label="Dashboard" :active="request()->routeIs('dashboard')" to="/dashboard">
                         <x-slot name="prefix">
                             <i class="bi bi-pie-chart-fill text-lg"></i>
                         </x-slot>
-                    </x-sidebar-item>
+                    </x-dashboard-sidebar-item>
 
                 </ul>
             </div>

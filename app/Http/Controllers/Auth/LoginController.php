@@ -18,9 +18,10 @@ class LoginController extends Controller
 
         if (Auth::attempt($credentials)) {
             Toast::success("Authentication successful!")->autoDismiss();
-            return redirect()->route("home");
         } else {
             return Toast::danger("Incorrect credentials!")->autoDismiss();
         }
+
+        return redirect()->back();
     }
 }

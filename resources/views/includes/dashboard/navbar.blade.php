@@ -45,7 +45,6 @@
                 </x-splade-toggle>
 
                 <!-- !!Theme changing script injection!! -->
-
                 <button @click="changeTheme()" type="button" class="text-gray-500 dark:text-gray-500 hover:bg-gray-100  dark:hover:text-white dark:hover:bg-gray-700 rounded-lg text-sm p-2 mr-1.5">
                     <i class="bi bi-sun text-xl"></i>
                 </button>
@@ -72,7 +71,7 @@
                                 <x-splade-link href="" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Settings</x-splade-link>
                             </li>
                             <li>
-                                <x-splade-link :href="route('logout')" method="delete" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem" require-password>Sign out</x-splade-link>
+                                <x-splade-link :href="route('default:auth.logout')" method="delete" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem" confirm>Sign out</x-splade-link>
                             </li>
                         </ul>
                     </x-splade-transition>

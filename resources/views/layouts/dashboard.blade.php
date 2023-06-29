@@ -1,4 +1,4 @@
-@include('includes.navbar')
+@include('includes.dashboard.navbar')
 
 <x-splade-data store="sidebar" default="{ opened: false }" remember="sidebar" />
 
@@ -8,6 +8,6 @@
         <main>
             @yield("main")
         </main>
-        @include('includes.footer')
+        @include('includes.dashboard.footer')
     </div>
 </div>

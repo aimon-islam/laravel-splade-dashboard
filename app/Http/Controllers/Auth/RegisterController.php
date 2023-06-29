@@ -20,6 +20,6 @@ class RegisterController extends Controller
 
         auth()->login($user);
 
-        return redirect()->route("web.initial.home");
+        return redirect()->back();
     }
 }

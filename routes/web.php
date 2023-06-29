@@ -16,10 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(['splade'])->group(function () {
 
     // initial routes
-    Route::as("")->group(base_path("routes/web/initial.php"));
+    Route::as("default:")->group(base_path("routes/web/initial.php"));
 
     // auth routes
-    Route::as("")->group(base_path("routes/web/auth.php"));
+    Route::as("default:auth.")->group(base_path("routes/web/auth.php"));
 
     // Registers routes to support the interactive components...
     Route::spladeWithVueBridge();
