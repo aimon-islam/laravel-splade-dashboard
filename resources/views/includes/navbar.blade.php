@@ -20,18 +20,7 @@
             </div>
 
             <div class="flex items-center">
-
-                <!-- !!You can remove. It doesn't affect on dashboard functionality!!  -->
-                @if(app()->isLocal())
-                <div class="hidden mr-3 -mb-1 sm:block">
-                    <!-- Place this tag in your head or just before your close body tag. -->
-                    <script async defer src="https://buttons.github.io/buttons.js"></script>
-                    <!-- Place this tag where you want the button to render. -->
-                    <a class="github-button" href="https://github.com/aimon-islam/laravel-splade-dashboard" data-color-scheme="no-preference: dark_high_contrast; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Star aimon-islam/laravel-splade-dashboard on GitHub">Star</a>
-                </div>
-                @endif
-                <!-- !!Remove if you are in production!!  -->
-
+                
                 <button type="button" class="p-2 text-gray-500 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700">
                     <i class="bi bi-bell-fill text-xl"></i>
                 </button>
