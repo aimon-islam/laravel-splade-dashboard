@@ -2,6 +2,7 @@ import 'flowbite';
 import "./bootstrap";
 import "../scss/app.scss";
 import "@protonemedia/laravel-splade/dist/style.css";
+import "bootstrap-icons/font/bootstrap-icons.css"
 
 import { createApp } from "vue/dist/vue.esm-bundler.js";
 import { renderSpladeApp, SpladePlugin } from "@protonemedia/laravel-splade";
