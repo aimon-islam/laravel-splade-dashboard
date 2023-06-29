@@ -1,6 +1,6 @@
 <aside class="fixed top-0 left-0 z-20 flex flex-col flex-shrink-0 w-64 h-full pt-16 duration-75 font-normal lg:flex transition-width" aria-label="Sidebar" v-bind:class="{ hidden: !sidebar.opened }">
     <div class="relative flex flex-col flex-1 min-h-0 pt-0 bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-        <div class="flex flex-col flex-1 pt-5 pb-4 overflow-y-auto">
+        <div @preserveScroll('sidebar') class="flex flex-col flex-1 pt-5 pb-4 overflow-y-auto">
             <div class="flex-1 px-3 space-y-1 bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
                 <ul class="pb-2 space-y-2">
                     <li>
@@ -13,12 +13,13 @@
                             </div>
                         </x-splade-form>
                     </li>
-
-                    <x-sidebar-item label="Dashboard" :active="request()->routeIs('dashboard','home')">
+                    
+                    <x-sidebar-item label="Dashboard" :active="request()->routeIs('dashboard')" to="/dashboard">
                         <x-slot name="prefix">
                             <i class="bi bi-pie-chart-fill text-lg"></i>
                         </x-slot>
                     </x-sidebar-item>
+
                 </ul>
             </div>
         </div>
