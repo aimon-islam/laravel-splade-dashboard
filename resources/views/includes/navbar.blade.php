@@ -20,52 +20,45 @@
             </div>
 
             <div class="flex items-center">
-                
+
                 <button type="button" class="p-2 text-gray-500 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700">
                     <i class="bi bi-bell-fill text-xl"></i>
                 </button>
 
-                <button type="button" data-dropdown-toggle="apps-dropdown" class="hidden p-2 text-gray-500 rounded-lg sm:flex hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700">
-                    <span class="sr-only">View notifications</span>
+                <x-splade-toggle class="relative">
+                    <button type="button" @click="toggle" v-bind:class="{'scale-125': toggled}" class="hidden p-2 text-gray-500 rounded-lg sm:flex hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700">
+                        <i class="bi bi-grid-fill text-xl"></i>
+                    </button>
 
-                    <i class="bi bi-grid-fill text-xl"></i>
-                </button>
+                    <x-splade-transition show="toggled" class="absolute right-6 top-16 w-72 overflow-hidden text-base list-none bg-white divide-y divide-gray-100 rounded shadow-2xl dark:bg-gray-700 dark:divide-gray-600">
+                        <div class="block px-4 py-2 text-base font-medium text-center text-gray-700 bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            Apps
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 p-4">
+                            <x-splade-link class="block p-4 text-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600">
+                                <i class="bi bi-bag-fill mx-auto mb-1 text-2xl text-gray-500 dark:text-gray-400"></i>
+                                <div class="text-sm font-medium text-gray-900 dark:text-white">Sales</div>
+                            </x-splade-link>
+                        </div>
+                    </x-splade-transition>
 
-                <div class="z-20 z-50 hidden max-w-sm my-4 overflow-hidden text-base list-none bg-white divide-y divide-gray-100 rounded shadow-lg dark:bg-gray-700 dark:divide-gray-600" id="apps-dropdown">
-                    <div class="block px-4 py-2 text-base font-medium text-center text-gray-700 bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                        Apps
-                    </div>
-                    <div class="grid grid-cols-3 gap-4 p-4">
-                        <x-splade-link class="block p-4 text-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600">
-                            <i class="bi bi-bag-fill mx-auto mb-1 text-2xl text-gray-500 dark:text-gray-400"></i>
-                            <div class="text-sm font-medium text-gray-900 dark:text-white">Sales</div>
-                        </x-splade-link>
-
-                        <x-splade-link class="block p-4 text-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600">
-                            <i class="bi bi-box-arrow-left mx-auto mb-1 text-2xl text-gray-500 dark:text-gray-400"></i>
-                            <div class="text-sm font-medium text-gray-900 dark:text-white">Logout</div>
-                        </x-splade-link>
-                    </div>
-                </div>
-
+                </x-splade-toggle>
 
                 <!-- !!Theme changing script injection!! -->
-                <x-splade-script> $splade.on('apply-theme', ()=> applyTheme(true)); </x-splade-script>
 
-                <button @click="$splade.emit('apply-theme')" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                <button @click="changeTheme()" type="button" class="text-gray-500 dark:text-gray-500 hover:bg-gray-100  dark:hover:text-white dark:hover:bg-gray-700 rounded-lg text-sm p-2 mr-1.5">
                     <i class="bi bi-sun text-xl"></i>
                 </button>
-                <!-- !!Change theme!! -->
+                <!-- !!End Change theme!! -->
 
-                <div class="flex items-center ml-3">
+                <x-splade-toggle class="flex items-center ml-3 relative">
                     <div>
-                        <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button-2" aria-expanded="false" data-dropdown-toggle="dropdown-2">
-                            <span class="sr-only">Open user menu</span>
+                        <button type="button" @click.prevent="toggle" v-bind:class="{'scale-125': toggled}" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600">
                             <img class="w-8 h-8 rounded-full" src="/images/user.png" alt="user photo">
                         </button>
                     </div>
 
-                    <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown-2">
+                    <x-splade-transition show="toggled" class="absolute top-16 right-6 text-base bg-white divide-y divide-gray-100 rounded shadow-xl dark:bg-gray-700 dark:divide-gray-600">
                         <div class="px-4 py-3" role="none">
                             <p class="text-sm text-gray-900 dark:text-white" role="none">
                                 {{auth()->user()->first_name}} {{auth()->user()->last_name}}
@@ -79,11 +72,11 @@
                                 <x-splade-link href="" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Settings</x-splade-link>
                             </li>
                             <li>
-                                <x-splade-link :href="route('logout')" method="delete" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem" confirm>Sign out</x-splade-link>
+                                <x-splade-link :href="route('logout')" method="delete" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem" require-password>Sign out</x-splade-link>
                             </li>
                         </ul>
-                    </div>
-                </div>
+                    </x-splade-transition>
+                </x-splade-toggle>
             </div>
         </div>
     </div>
