@@ -1,6 +1,6 @@
 @include('includes.navbar')
 
-<x-splade-data store="sidebar" default="{ opened: false }" />
+<x-splade-data store="sidebar" default="{ opened: false }" remember="sidebar" />
 
 <div class="flex pt-16 overflow-hidden bg-gray-50 dark:bg-gray-900">
     @include('includes.sidebar')
