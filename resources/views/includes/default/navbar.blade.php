@@ -4,19 +4,19 @@
             <div class="flex items-center justify-between">
                 <div class="flex items-center justify-start">
                     <x-splade-link :href="route('default:home')" class="flex mr-4">
-                        <img src="logo.svg" class="h-8 mx-3 xl:ml-0" alt="Flowbite Logo" />
+                        <img src="/logo.svg" class="h-8 mx-3 xl:ml-0" alt="Flowbite Logo" />
                         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
                     </x-splade-link>
                     <div class="hidden sm:flex sm:ml-6">
                         <ul class="flex space-x-8">
                             <li>
-                                <x-splade-link :href="route('default:home')" class="text-sm font-medium text-gray-700 hover:text-primary-700 dark:text-gray-400 dark:hover:text-primary-500" aria-current="page">Home</x-splade-link>
+                                <x-splade-link :href="route('default:home')" class="text-sm font-medium text-gray-700 hover:text-primary-700 dark:text-gray-400 dark:hover:text-primary-500">Home</x-splade-link>
                             </li>
                             <li>
-                                <x-splade-link href="" class="text-sm font-medium text-gray-700 hover:text-primary-700 dark:text-gray-400 dark:hover:text-primary-500" aria-current="page">Pricing</x-splade-link>
+                                <x-splade-link :href="route('default:product.list')" class="text-sm font-medium text-gray-700 hover:text-primary-700 dark:text-gray-400 dark:hover:text-primary-500">Pricing</x-splade-link>
                             </li>
                             <li>
-                                <x-splade-link href="" class="text-sm font-medium text-gray-700 hover:text-primary-700 dark:text-gray-400 dark:hover:text-primary-500" aria-current="page">Contact</x-splade-link>
+                                <x-splade-link href="" class="text-sm font-medium text-gray-700 hover:text-primary-700 dark:text-gray-400 dark:hover:text-primary-500">Contact</x-splade-link>
                             </li>
                         </ul>
                     </div>

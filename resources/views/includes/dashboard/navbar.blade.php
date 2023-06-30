@@ -6,7 +6,7 @@
                     <i class="bi bi-list"></i>
                 </button>
                 <x-splade-link href="/" class="flex ml-2 md:mr-24">
-                    <img src="logo.svg" class="h-8 mr-3" alt="FlowBite Logo" />
+                    <img src="/logo.svg" class="h-8 mr-3" alt="FlowBite Logo" />
                     <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Flowbite</span>
                 </x-splade-link>
                 <form action="#" method="GET" class="hidden lg:block lg:pl-3.5">
