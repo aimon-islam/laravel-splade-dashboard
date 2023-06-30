@@ -24,8 +24,8 @@ class RegisterRequest extends FormRequest
         return [
             "first_name" => "required|string",
             "last_name" => "required|string",
-            "email" => "required|email",
-            "phone" => "nullable|numeric|min:11", // the minimum digit 11 is only for bangladesh if you are living outside input your own
+            "email" => "required|email|unique:users,email",
+            "phone" => "nullable|numeric|min:11|unique:users,phone", // the minimum digit 11 is only for bangladesh if you are living outside input your own
             "password" => "required|confirmed|min:6", // the minimum digit 11 is only for bangladesh if you are living outside input your own
         ];
     }

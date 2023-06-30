@@ -4,7 +4,7 @@
 
 @section('form')
 
-<x-splade-form class="mt-8 space-y-6">
+<x-splade-form class="mt-8 space-y-6" :action="route('default:auth.do.register')">
 
     <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">

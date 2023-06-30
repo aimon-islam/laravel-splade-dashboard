@@ -28,13 +28,13 @@
                         <i class="bi bi-sun"></i>
                     </button>
                     <!-- !!End Change theme!! -->
-                    
+
                     @if(auth()->check())
                     <x-splade-link :href="route('default:dashboard')" class="hidden sm:inline-flex text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
                         <i class="bi bi-person text-lg mr-1"></i> Dashboard
                     </x-splade-link>
                     @else
-                    <x-splade-link :href="route('default:auth.login')" class="hidden sm:inline-flex text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                    <x-splade-link :href="route('default:auth.' . (request()->routeIs('default:auth.login') ? 'register' : 'login'))" class="hidden sm:inline-flex text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
                         <i class="bi bi-box-arrow-in-left text-lg"></i> Login/Register
                     </x-splade-link>
                     @endif
@@ -66,7 +66,7 @@
                         Go to Dashboard
                     </x-splade-link>
                     @else
-                    <x-splade-link :href="route('default:auth.login')" class="inline-flex items-center w-full px-3 py-2 text-base font-normal {{ request()->routeIs('default:auth.*') ? 'text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-700 ':'text-gray-600 dark:text-gray-400' }}">
+                    <x-splade-link :href="route('default:auth.' . (request()->routeIs('default:auth.login') ? 'register' : 'login'))" class="inline-flex items-center w-full px-3 py-2 text-base font-normal {{ request()->routeIs('default:auth.*') ? 'text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-700 ':'text-gray-600 dark:text-gray-400' }}">
                         <i class="bi bi-box-arrow-in-left text-lg"></i> Login/Register
                     </x-splade-link>
                     @endif

@@ -7,14 +7,14 @@ use App\Http\Controllers\Auth\ShowRegisterPageController;
 use Illuminate\Support\Facades\Route;
 
 // show login page
-Route::get("login", ShowLoginPageController::class)->middleware("guest")->name("show.login");
+Route::get("login", ShowLoginPageController::class)->middleware("guest")->name("login");
 // do login operation
-Route::post("login", LoginController::class)->name("login");
+Route::post("login", LoginController::class)->name("do.login");
 
 // show registration page
-Route::get("register", ShowRegisterPageController::class)->middleware("guest")->name("show.register");
+Route::get("register", ShowRegisterPageController::class)->middleware("guest")->name("register");
 // do register operation
-Route::post("register", RegisterController::class)->name("register");
+Route::post("register", RegisterController::class)->name("do.register");
 
 // do logout user
 Route::delete("logout", function () {
