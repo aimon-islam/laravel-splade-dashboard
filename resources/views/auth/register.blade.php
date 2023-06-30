@@ -10,27 +10,32 @@
         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
             <input type="text" v-model="form.first_name" id="first_name" placeholder="Aimon" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+            <p v-text="form.errors.first_name" class="pl-1 mt-1 text-xs text-red-600 dark:text-red-500" />
         </div>
 
         <div class="w-full md:w-1/2 px-3">
             <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last Name</label>
             <input type="text" v-model="form.last_name" id="last_name" placeholder="Islam" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+            <p v-text="form.errors.last_name" class="pl-1 mt-1 text-xs text-red-600 dark:text-red-500" />
         </div>
     </div>
 
     <div>
         <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Phone Number</label>
         <input type="tel" v-model="form.phone" id="phone" placeholder="+290 2xxx" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+        <p v-text="form.errors.phone" class="pl-1 mt-1 text-xs text-red-600 dark:text-red-500" />
     </div>
 
     <div>
         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Email</label>
         <input type="email" v-model="form.email" id="email" placeholder="name@company.com" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+        <p v-text="form.errors.email" class="pl-1 mt-1 text-xs text-red-600 dark:text-red-500" />
     </div>
 
     <div>
         <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Password</label>
         <input type="password" v-model="form.password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+        <p v-text="form.errors.password" class="pl-1 mt-1 text-xs text-red-600 dark:text-red-500" />
     </div>
 
     <div>
