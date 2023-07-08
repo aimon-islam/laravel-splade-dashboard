@@ -70,7 +70,7 @@
                 <span>Free updates: <span class="font-semibold">6 months</span></span>
             </li>
         </ul>
-        <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get
+        <a href="#" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-blue-900">Get
             started</a>
     </div>
     <!-- Pricing Card -->
@@ -120,7 +120,7 @@
                 <span>Free updates: <span class="font-semibold">24 months</span></span>
             </li>
         </ul>
-        <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get
+        <a href="#" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-blue-900">Get
             started</a>
     </div>
     <!-- Pricing Card -->
@@ -170,7 +170,7 @@
                 <span>Free updates: <span class="font-semibold">36 months</span></span>
             </li>
         </ul>
-        <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get
+        <a href="#" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-blue-900">Get
             started</a>
     </div>
 </section>
@@ -462,7 +462,7 @@
                 <p class="mb-4 text-gray-600 dark:text-gray-400">We're aware of the importance of well qualified support,
                     that is why we decided that support will only be provided by the authors that actually worked on this
                     project.</p>
-                <p class="mb-4 text-gray-600 dark:text-gray-400">Feel free to <a href="#" class="font-medium underline text-primary-600 hover:no-underline dark:text-primary-500" target="_blank" rel="noreferrer">contact us</a> and we'll help you out as soon as we can.</p>
+                <p class="mb-4 text-gray-600 dark:text-gray-400">Feel free to <a href="#" class="font-medium underline text-blue-600 hover:no-underline dark:text-blue-500" target="_blank" rel="noreferrer">contact us</a> and we'll help you out as soon as we can.</p>
             </div>
             <div class="mb-10">
                 <h3 class="mb-4 text-lg font-medium text-gray-900 dark:text-white">I want to build more than one project
@@ -471,20 +471,20 @@
                     whether it's a personal website, a SaaS app, or a website for a client. As long as you don't build a
                     product that will directly compete with FlowBite either as a UI kit, theme, or template, it's fine.</p>
                 <p class="mb-4 text-gray-600 dark:text-gray-400">Find out more information by
-                    <Link to="/license" class="font-medium underline text-primary-600 hover:no-underline dark:text-primary-500">reading the
+                    <Link to="/license" class="font-medium underline text-blue-600 hover:no-underline dark:text-blue-500">reading the
                     license</Link>.
                 </p>
             </div>
             <div class="mb-10">
                 <h3 class="mb-4 text-lg font-medium text-gray-900 dark:text-white">What does "free updates" include?</h3>
-                <p class="mb-4 text-gray-600 dark:text-gray-400">The free updates that will be provided is based on the <a href="#" class="font-medium underline text-primary-600 hover:no-underline dark:text-primary-500">roadmap</a>
+                <p class="mb-4 text-gray-600 dark:text-gray-400">The free updates that will be provided is based on the <a href="#" class="font-medium underline text-blue-600 hover:no-underline dark:text-blue-500">roadmap</a>
                     that we have laid out for this project. It is also possible that we will provide extra updates outside
                     of the roadmap as well.</p>
             </div>
             <div class="mb-10">
                 <h3 class="mb-4 text-lg font-medium text-gray-900 dark:text-white">What does the free version include?
                 </h3>
-                <p class="mb-4 text-gray-600 dark:text-gray-400">The <a href="#" class="font-medium underline text-primary-600 hover:no-underline dark:text-primary-500">free
+                <p class="mb-4 text-gray-600 dark:text-gray-400">The <a href="#" class="font-medium underline text-blue-600 hover:no-underline dark:text-blue-500">free
                         version</a> of FlowBite includes a minimal style guidelines, component variants, and a dashboard page
                     with the mobile version alongside it.</p>
                 <p class="mb-4 text-gray-600 dark:text-gray-400">You can use this version for any purposes, because it is
@@ -508,11 +508,11 @@
                 <p class="mb-4 text-gray-600 dark:text-gray-400">You can purchase a license that you can share with your
                     entire team here:</p>
                 <ul class="pl-4 mb-4 list-disc">
-                    <li class="mb-2 text-gray-600"><span class="font-medium cursor-pointer text-primary-600 hover:underline dark:text-primary-500">Figma
+                    <li class="mb-2 text-gray-600"><span class="font-medium cursor-pointer text-blue-600 hover:underline dark:text-blue-500">Figma
                             Files - Buy a team license for $299 USD</span></li>
-                    <li class="mb-2 text-gray-600"><span class="font-medium cursor-pointer text-primary-600 hover:underline dark:text-primary-500">Figma
+                    <li class="mb-2 text-gray-600"><span class="font-medium cursor-pointer text-blue-600 hover:underline dark:text-blue-500">Figma
                             Files + Tailwind CSS code pre-order - Buy a team license for <del>$699</del> $559 USD</span></li>
-                    <li class="mb-4 text-gray-600 dark:text-gray-400"><span class="font-medium cursor-pointer text-primary-600 hover:underline dark:text-primary-500">Tailwind
+                    <li class="mb-4 text-gray-600 dark:text-gray-400"><span class="font-medium cursor-pointer text-blue-600 hover:underline dark:text-blue-500">Tailwind
                             CSS code pre-order - Buy a team license for <del>$399</del> $319 USD</span></li>
                 </ul>
                 <p class="mb-4 text-gray-600 dark:text-gray-400">Please use a single account to share with your team to
@@ -524,7 +524,7 @@
                 <p class="mb-4 text-gray-600 dark:text-gray-400">It is not allowed to use FlowBite or parts of the project
                     to build themes, templates, UI kits, or page builders.</p>
                 <p class="mb-4 text-gray-600 dark:text-gray-400">Find out more information by
-                    <Link to="/license" class="font-medium underline text-primary-600 hover:no-underline dark:text-primary-500">reading the
+                    <Link to="/license" class="font-medium underline text-blue-600 hover:no-underline dark:text-blue-500">reading the
                     license</Link>.
                 </p>
             </div>
@@ -537,7 +537,7 @@
                 <p class="mb-4 text-gray-600 dark:text-gray-400">With that being said, feel free to use this design kit
                     for your open-source projects.</p>
                 <p class="mb-4 text-gray-600 dark:text-gray-400">Find out more information by
-                    <Link to="/license" class="font-medium underline text-primary-600 hover:no-underline dark:text-primary-500">reading the
+                    <Link to="/license" class="font-medium underline text-blue-600 hover:no-underline dark:text-blue-500">reading the
                     license</Link>.
                 </p>
             </div>
@@ -549,7 +549,7 @@
                 <p class="mb-4 text-gray-600 dark:text-gray-400">As long as it is not a design resource that you will
                     re-sell, it is alright to use it for commercial purposes.</p>
                 <p class="mb-4 text-gray-600 dark:text-gray-400">Find out more information by
-                    <Link to="/license" class="font-medium underline text-primary-600 hover:no-underline dark:text-primary-500">reading the
+                    <Link to="/license" class="font-medium underline text-blue-600 hover:no-underline dark:text-blue-500">reading the
                     license</Link>.
                 </p>
             </div>
@@ -559,7 +559,7 @@
                     add all of your personal or company information that you want to be available on the invoice. After the
                     purchase, you will get an email with the invoice.</p>
                 <p class="mb-4 text-gray-600 dark:text-gray-400">If you forgot to complete the information, or you didn't
-                    get the invoice by email, feel free to <a href="#" class="font-medium underline text-primary-600 hover:no-underline dark:text-primary-500" target="_blank" rel="noreferrer">contact us</a> and help you out with the invoice.</p>
+                    get the invoice by email, feel free to <a href="#" class="font-medium underline text-blue-600 hover:no-underline dark:text-blue-500" target="_blank" rel="noreferrer">contact us</a> and help you out with the invoice.</p>
             </div>
         </div>
         <div>
@@ -575,7 +575,7 @@
             </div>
             <div class="mb-10">
                 <h3 class="mb-4 text-lg font-medium text-gray-900 dark:text-white">What is your refund policy?</h3>
-                <p class="mb-4 text-gray-600 dark:text-gray-400">If you are unhappy with your purchase, just <a href="#" class="font-medium underline text-primary-600 hover:no-underline dark:text-primary-500" target="_blank" rel="noreferrer">contact us</a> within 30 days and we'll issue a full refund.</p>
+                <p class="mb-4 text-gray-600 dark:text-gray-400">If you are unhappy with your purchase, just <a href="#" class="font-medium underline text-blue-600 hover:no-underline dark:text-blue-500" target="_blank" rel="noreferrer">contact us</a> within 30 days and we'll issue a full refund.</p>
             </div>
             <div class="mb-10">
                 <h3 class="mb-4 text-lg font-medium text-gray-900 dark:text-white">Is it allowed to use the design assets,

@@ -39,13 +39,13 @@
     <div class="grid grid-cols-12 gap-5">
         <div class="col-span-12">
             <div class="flex flex-wrap items-center justify-between gap-2">
-                <span class="text-lg dark:text-white">Results of '<span class="text-primary-600">notebook</span>'</span>
+                <span class="text-lg dark:text-white">Results of '<span class="text-blue-600">notebook</span>'</span>
             </div>
         </div>
         <div class="col-span-12 md:col-span-4 lg:col-span-4 xl:col-span-3">
             <x-splade-form class="flex flex-col rounded-lg dark:bg-gray-800 bg-white p-5" action="#">
                 <div class="mb-5 flex items-center gap-2">
-                    <i class="bi bi-funnel flex text-sm text-primary-600"></i>
+                    <i class="bi bi-funnel flex text-sm text-blue-600"></i>
                     <h1 class="text-xl font-bold uppercase dark:text-white">Search Filter</h1>
                 </div>
                 <div class="mb-5 border-t-2 pt-5">
@@ -60,7 +60,7 @@
                 <div class="border-t-2 pt-5">
                     <span class="mb-2 flex font-semibold dark:text-white">Price range</span>
 
-                    <x-splade-submit label="Filter" class="mt-2 w-full border-0 rounded-lg bg-primary-600 p-2 font-bold uppercase text-white"/>
+                    <x-splade-submit label="Filter" class="mt-2 w-full border-0 rounded-lg bg-blue-600 p-2 font-bold uppercase text-white"/>
                        
                 </div>
             </x-splade-form>
@@ -82,7 +82,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="absolute top-0 left-0 h-[35px] w-[90px] bg-primary-500 rounded-br-lg flex justify-center items-center">
+                        <div class="absolute top-0 left-0 h-[35px] w-[90px] bg-blue-500 rounded-br-lg flex justify-center items-center">
                             <span class="text-white text-md text-center font-semibold uppercase">25% Off</span>
                         </div>
                         <div class="h-[190px] overflow-hidden rounded-lg">
@@ -117,11 +117,11 @@
                             </div>
 
                             <div class="my-1 flex items-center gap-2 dark:text-white">
-                                <span class="text-sm text-primary-color line-through">MRP: ৳50.00</span>
+                                <span class="text-sm text-blue-color line-through">MRP: ৳50.00</span>
                                 <span class="text-lg font-bold">Now: ৳37.00</span>
                             </div>
                             <div class="mt-auto">
-                                <x-splade-link class="btn-effect flex justify-center items-center font-bold uppercase text-white w-full p-2 bg-primary-700 rounded-lg transition-all-300">
+                                <x-splade-link class="btn-effect flex justify-center items-center font-bold uppercase text-white w-full p-2 bg-blue-700 rounded-lg transition-all-300">
                                     Add to Cart
                                 </x-splade-link>
                             </div>
