@@ -13,7 +13,7 @@
                                 <x-splade-link :href="route('default:home')" class="text-sm font-medium text-gray-700 hover:text-blue-700 dark:text-gray-400 dark:hover:text-blue-500">Home</x-splade-link>
                             </li>
                             <li>
-                                <x-splade-link :href="route('default:product.list')" class="text-sm font-medium text-gray-700 hover:text-blue-700 dark:text-gray-400 dark:hover:text-blue-500">Pricing</x-splade-link>
+                                <x-splade-link :href="route('default:pricing')" class="text-sm font-medium text-gray-700 hover:text-blue-700 dark:text-gray-400 dark:hover:text-blue-500">Pricing</x-splade-link>
                             </li>
                             <li>
                                 <x-splade-link href="" class="text-sm font-medium text-gray-700 hover:text-blue-700 dark:text-gray-400 dark:hover:text-blue-500">Contact</x-splade-link>
